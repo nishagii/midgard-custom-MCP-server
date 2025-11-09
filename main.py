@@ -1,5 +1,6 @@
 """
 HR Management MCP Server (Full Mock Version)
+--------------------------------------------
 Run:
     uv run server hr_mcp stdio
 """
@@ -46,7 +47,7 @@ EMPLOYEES = [
 
 
 # ───────────────────────────────
-# Get all employees
+# 🧰 TOOL 1: Get all employees
 # ───────────────────────────────
 @mcp.tool()
 def get_all_employees() -> list:
@@ -60,7 +61,7 @@ def get_all_employees() -> list:
 
 
 # ───────────────────────────────
-# Get employee by ID
+# 🧰 TOOL 2: Get employee by ID
 # ───────────────────────────────
 @mcp.tool()
 def get_employee_by_id(emp_id: int) -> dict:
@@ -80,7 +81,7 @@ def get_employee_by_id(emp_id: int) -> dict:
 
 
 # ───────────────────────────────
-# Update employee role
+# 🧰 TOOL 3: Update employee role
 # ───────────────────────────────
 @mcp.tool()
 def update_employee_role(emp_id: int, new_role: str) -> str:
@@ -104,7 +105,7 @@ def update_employee_role(emp_id: int, new_role: str) -> str:
 
 
 # ───────────────────────────────
-# Add a new employee
+# 🧰 TOOL 4: Add a new employee
 # ───────────────────────────────
 @mcp.tool()
 def add_employee(
@@ -144,7 +145,7 @@ def add_employee(
 
 
 # ───────────────────────────────
-# Delete an employee
+# 🧰 TOOL 5: Delete an employee
 # ───────────────────────────────
 @mcp.tool()
 def delete_employee(emp_id: int) -> str:
@@ -165,7 +166,7 @@ def delete_employee(emp_id: int) -> str:
 
 
 # ───────────────────────────────
-# Get employee metrics
+# 🧰 TOOL 6: Get employee metrics
 # ───────────────────────────────
 @mcp.tool()
 def get_employee_metrics(emp_id: int) -> dict:
